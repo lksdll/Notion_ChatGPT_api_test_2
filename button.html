@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Notion Button</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion Button</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-  .notion-button {
-    display: inline-block;
-    padding: 10px 20px;
-    width: 80%;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: green;
-    border-radius: 6px;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    font-family: "Helvetica", sans-serif;
-  }
+    .notion-button {
+      display: inline-block;
+      padding: 10px 20px;
+      width: 80%;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: red;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      font-family: "Helvetica", sans-serif;
+    }
 
-  .notion-button:hover {
-    background-color: #333;
-  }
+    .notion-button:hover {
+      background-color: #333;
+    }
 
-  .notion-button:active {
-    background-color: #555;
-  }
+    .notion-button:active {
+      background-color: #555;
+    }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-</style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
+
 <body>
 
   <div class="container">
     <a href="#" class="notion-button">Generate Summary</a>
-    <div id="testDIV">{{ window.location.href }}</div>
   </div>
+
+  <div class="current-url" id="currentUrlDisplay"></div>
+
+  <script>
+    // JavaScript to display the current URL
+    document.getElementById("currentUrlDisplay").innerText = "Current URL: " + window.location.href;
+  </script>
 
 
 </body>
+
 </html>
