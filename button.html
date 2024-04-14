@@ -41,15 +41,12 @@
     height: 100%;
   }
 </style>
-<script>
-document.getElementById("testDIV").innerHTML = window.location.href;
-</script>
 </head>
 <body>
 
   <div class="container">
     <a href="#" class="notion-button">Generate Summary</a>
-    <div id="testDIV"></div>
+    <div id="testDIV">{{ window.location.href }}</div>
   </div>
 
 
