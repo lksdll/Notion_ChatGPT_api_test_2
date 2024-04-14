@@ -19,7 +19,7 @@
     text-align: center;
     text-decoration: none;
     color: #fff;
-    background-color: #000;
+    background-color: blue;
     border-radius: 6px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     font-family: "Helvetica", sans-serif;
@@ -41,11 +41,15 @@
     height: 100%;
   }
 </style>
+<script>
+document.getElementById("testDIV").innerHTML = window.location.href;
+</script>
 </head>
 <body>
 
   <div class="container">
     <a href="#" class="notion-button">Generate Summary</a>
+    <div id="testDIV"></div>
   </div>
 
 
